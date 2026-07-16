@@ -79,8 +79,10 @@ pipeline {
         }
 
         stage('Trivy Image Scan') {
-            steps {
+             steps {
                 sh '''
+                    export TMPDIR=/var/tmp
+
                     trivy image \
                         --scanners vuln \
                         --severity HIGH,CRITICAL \
@@ -90,8 +92,8 @@ pipeline {
                         --format table \
                         -o trivy-report.txt \
                         ${IMAGE_NAME}:${IMAGE_TAG}
-                ''' 
-            }
+                '''
+             }
         }
 
         stage('Run Container') {
