@@ -54,8 +54,8 @@ pipeline {
                     
                     ./mvnw dependency:tree -DoutputType=dot
 
-                    ./snyk test \ 
-                        --all-projects \ 
+                    ./snyk test \
+                        --all-projects \
                         --severity-threshold=medium \
                         --json-file-output=snyk-report.json || true
                     
