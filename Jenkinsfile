@@ -59,6 +59,8 @@ pipeline {
                         --severity-threshold=medium \
                         --json-file-output=snyk-report.json || true
                     
+                    ./snyk monitor \
+                        --all-projects
                     '''
                 }
             }
