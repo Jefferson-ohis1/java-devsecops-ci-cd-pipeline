@@ -166,7 +166,7 @@ Before accessing Jenkins or running the pipeline, verify that the EC2 instance i
 
 **Figure: Jenkins Dashboard**
 
-![Jenkins Dashboard](../screenshots/jenkins-dashboard.png)
+![Jenkins Dashboard](../screenshots/jenkins/02-jenkins-job-dashboard.png)
 
 ---
 
@@ -396,7 +396,7 @@ Verify from your account in https://sonarcloud.io:
 
 **Figure: SonarCloud Project Dashboard After Successful Analysis**
 
-![SonarCloud Project Dashboard](../screenshots/sonarcloud-analysis.png)
+![SonarCloud Project Dashboard](../screenshots/sonarcloud/02-project-health-dashboard.png)
 
 ---
 
@@ -799,8 +799,8 @@ The Jenkins pipeline now:
 - Executes the **OWASP ZAP Baseline Scan** stage.
 - Pushes the Docker image to Docker Hub after completing the security checks.
 
-**Figure: Trivy Vulnerability Report (`trivy-report.txt`)**
-![Trivy Vulnerability Report](../screenshots/trivy-report.png)
+**Figure: Trivy Vulnerability summary Report (`trivy-report.txt`)**
+![Trivy Vulnerability summary Report](../screenshots/trivy/01-trivy-image-scan-vulnerability-summary.png)
 
 > [!IMPORTANT] In production environments, configure Trivy with a non-zero exit code (for example, `--exit-code 1`) so the pipeline fails when vulnerabilities exceed the organization's accepted risk threshold.
 
@@ -842,7 +842,7 @@ docker logs devsecops-java-app-container
 
 **Figure: Docker Container Running**
 
-![Docker Container Running](../screenshots/docker-running.png)
+![Docker Container Running](../screenshots/pipeline/04-docker-container-running-and-app-response.png)
 
 #### 2. Confirm the application is accessible.
 
@@ -886,18 +886,6 @@ After the scan completes, review the generated HTML report.
 ```text
 zap-report.html
 ```
-
-**Figure: OWASP ZAP Scan Overview**
-
-![Scan Overview](../screenshots/zap-scan-overview.png)
-
-**Figure: OWASP ZAP Risk Summary**
-
-![Risk Summary](../screenshots/zap-risk-summary.png)
-
-**Figure: OWASP ZAP Alerts**
-
-![Alerts](../screenshots/zap-alerts.png)
 
 ### ZAP Exit Codes
 
@@ -954,7 +942,7 @@ After configuring the `archiveArtifacts` step, Jenkins automatically archives al
 
 **Figure: Jenkins Build Artifacts Containing Security Scan Reports**
 
-![Jenkins Build Artifacts](../screenshots/jenkins-artifacts.png)
+![Jenkins Build Artifacts](../screenshots/jenkins/02-jenkins-job-dashboard.png)
 ---
 
 ## 19. GitHub Webhook Did Not Trigger Jenkins

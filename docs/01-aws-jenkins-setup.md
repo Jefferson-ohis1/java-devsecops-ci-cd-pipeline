@@ -51,9 +51,9 @@ An Ubuntu EC2 instance was provisioned from the **AWS Management Console** to ho
 | **Subnet** | Existing Subnet |
 | **Public IP** | Enabled |
 
-**Figure 1. AWS EC2 Jenkins Server**
+**Figure: AWS EC2 Jenkins Server**
 
-![AWS EC2 Jenkins Server Overview](../screenshots/ec2-instance-overview.png)
+![AWS EC2 Jenkins Server Overview](../screenshots/aws/01-ec2-instance-running.png)
 
 *AWS EC2 Ubuntu instance running Jenkins, showing the instance name, type, status, and public IP address.*
 
@@ -66,6 +66,9 @@ An Ubuntu EC2 instance was provisioned from the **AWS Management Console** to ho
 | **8080** | TCP | Jenkins web interface |
 | **8081** | TCP | Access to the Dockerized Java application |
 
+**Figure: AWS EC2 Security Group Inbound Rules configuration**
+
+![AWS EC2 Jenkins Server Inbound Rules Overview](../screenshots/aws/02-security-group-inbound-rules.png.png)
 ---
 
 ## Step 2 – Connect to the EC2 Instance
@@ -338,10 +341,6 @@ Add the following credentials:
 ### Jenkinsfile Usage
 
 The credentials are accessed in the pipeline using the `credentials()` and `withCredentials` directives.
-
-**Jenkins Global Credentials**
-
-![Jenkins Global Credentials](../screenshots/jenkins-global-credentials.png)
 
 ---
 

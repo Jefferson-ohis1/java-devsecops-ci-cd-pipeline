@@ -64,9 +64,6 @@ The OWASP ZAP Baseline Scan was executed from a Jenkins server hosted on an Ubun
 | **Public IP** | Enabled |
 | **Security Group** | Existing Security Group |
 
-**Figure 1. AWS EC2 Jenkins Server**
-
-![AWS EC2 Jenkins Server Overview](../screenshots/ec2-instance-overview.png)
 
 ### Security Group Inbound Rules
 

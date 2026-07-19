@@ -305,81 +305,69 @@ This pipeline provides several DevSecOps benefits:
 
 ## Screenshots
 
-**Figure 1. Jenkins Pipeline Configuration**
+**Figure 1. GitHub Webhook Configuration Success**
 
-![Jenkins Pipeline Configuration](../screenshots/jenkins-pipeline-configuration.png)
-
----
-
-**Figure 2. GitHub Webhook Configuration**
-
-![GitHub Webhook Configuration](../screenshots/github-webhook-configuration.png)
+![GitHub Webhook Configuration Success](../screenshots/jenkins/01-github-webhook-created-successfully.png)
 
 ---
 
-**Figure 3. Jenkins Pipeline Dashboard**
+**Figure 2. Jenkins Pipeline Dashboard**
 
-![Jenkins Pipeline Dashboard](../screenshots/jenkins-pipeline-dashboard.png)
-
----
-
-**Figure 4. Jenkins Build History**
-
-![Jenkins Build History](../screenshots/jenkins-build-history.png)
+![Jenkins Pipeline Dashboard](../screenshots/jenkins/03-%20jenkins-build-8-stage-view-success.png)
 
 ---
 
-**Figure 5. Jenkins Console Output – Successful Pipeline Execution**
+**Figure 3. Jenkins Build History**
 
-![Jenkins Console Output](../screenshots/jenkins-console-success.png)
-
----
-
-**Figure 6. sonarcloud-quality-gate**
-
-![SonarCloud-Quality-Gate](../screenshots/sonarcloud-quality-gate.png)
+![Jenkins Build History](../screenshots/jenkins/02-jenkins-job-dashboard.png)
 
 ---
 
-**Figure 7. snyk-scan-execution**
+**Figure 4. Jenkins Console Output – Successful Pipeline Execution**
 
-![snyk-scan-execution](../screenshots/snyk-scan-execution.png)
-
----
-
-**Figure 8. Trivy Scan Output in Jenkins Console**
-
-![Trivy-Scan-Output](../screenshots/trivy-scan-output.png)
+![Jenkins Console Output](../screenshots/pipeline/02-jenkins-pipeline-build-success.png)
 
 ---
 
-**Figure 9. Running-Docker-Container**
+**Figure 5. sonarcloud-quality-gate**
 
-![Running-Docker-Container](../screenshots/running-docker-container.png)
-
----
-
-**Figure 10. OWASP-Zap-Scan-Execution**
-
-![OWASP-Zap-Scan-Execution](../screenshots/owasp-zap-scan-execution.png)
+![SonarCloud-Quality-Gate](../screenshots/sonarcloud/01-projects-overview.png)
 
 ---
 
-**Figure 11. OWASP-Zap-html-report**
+**Figure 6. snyk-scan-execution**
 
-![OWASP-Zap-html-report](../screenshots/owasp-zap-html-report.png)
+![snyk-scan-execution](../screenshots/snyk/01-sca-vulnerability-results.png)
 
 ---
 
-**Figure 12. Jenkins Archived Artifacts – snyk-report.json, trivy-report.txt, and zap-report.html**
+**Figure 7. Trivy Image Scan vulnerability summary**
 
-![Jenkins Archived Artifacts](../screenshots/jenkins-archived-artifacts.png)
+![Trivy-image-scana-vulnerability summary](../screenshots/trivy/01-trivy-image-scan-vulnerability-summary.png)
+
+---
+
+**Figure 8. Running-Docker-Container**
+
+![Running-Docker-Container](../screenshots/pipeline/04-docker-container-running-and-app-response.png)
+
+---
+
+**Figure 9. OWASP-Zap-Scan-Execution**
+
+![OWASP-Zap-Scan-Execution](../screenshots/zap/01-zap-baseline-scan-stage.png)
+
+---
+
+**Figure 10. Jenkins Archived Artifacts – snyk-report.json, trivy-report.txt, and zap-report.html**
+
+![Jenkins Archived Artifacts](../screenshots/jenkins/02-jenkins-job-dashboard.png)
 
 ---
 
 **Figure 13. Dockerhub-Published-Image**
 
-![Dockerhub-Published-Image](../screenshots/dockerhub-published-image.png)
+![Dockerhub-Published-Image](../screenshots/pipeline/05-dockerhub-image-repository.png)
 
 ---
 
