@@ -247,6 +247,19 @@ In addition to generating `snyk-report.json`, the pipeline uploads a dependency 
 ---
 ## Screenshots
 
+Project screenshots are available in the following folders:
+
+- 📁 [AWS](screenshots/aws/)
+- 📁 [Jenkins](screenshots/jenkins/)
+- 📁 [Pipeline](screenshots/pipeline/)
+- 📁 [SonarCloud](screenshots/sonarcloud/)
+- 📁 [Snyk](screenshots/snyk/)
+- 📁 [Trivy](screenshots/trivy/)
+- 📁 [OWASP ZAP](screenshots/zap/)
+
+
+For detailed implementation steps, see the [documentation](docs/) directory.
+
 ---
 
 ## Documentation
